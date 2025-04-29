@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elite Luxe Motors</title>
-  <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -28,12 +31,18 @@
       background: rgba(0, 0, 0, 0.6);
       padding: 30px;
       border-radius: 10px;
+      max-width: 600px;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 48px;
       margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-family: 'Playfair Display', serif;
     }
 
     p {
@@ -70,6 +79,11 @@
       border-radius: 10px;
       width: 260px;
       box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
     }
 
     .card img {
@@ -84,11 +98,38 @@
       font-family: 'Playfair Display', serif;
     }
 
+    .video-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .video-container video,
+    .video-container iframe {
+      width: 100%;
+      border-radius: 10px;
+    }
+
     footer {
       background-color: #111;
       color: #ccc;
       text-align: center;
       padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .btn {
+        width: 100%;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
@@ -103,6 +144,26 @@
       <a href="rentals.html" class="btn">Rent a Luxury Car</a>
     </div>
   </header>
+
+  <!-- VIDEO SECTION -->
+  <section>
+    <h2>Experience the Drive</h2>
+    <div class="video-container">
+      <!-- Self-hosted video example -->
+      <video controls>
+        <source src="videos/rolls-drive.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- OR use a YouTube embed:
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      -->
+
+      <p style="margin-top: 10px; font-style: italic;">
+        A cinematic tour of the Rolls-Royce Phantom — where luxury meets engineering perfection.
+      </p>
+    </div>
+  </section>
 
   <!-- BRANDS SECTION -->
   <section>
@@ -157,4 +218,3 @@
 
 </body>
 </html>
-
