@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elite Luxe Motors</title>
+  <title>Boujee Luxury Motors</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
   <style>
     * {
@@ -13,8 +13,8 @@
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: #0a0a0a;
-      color: #ffffff;
+      color: #fff;
+      background-color: #000;
     }
 
     header {
@@ -23,26 +23,24 @@
       overflow: hidden;
     }
 
-    header video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
+    header img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       z-index: -1;
     }
 
     .hero-text {
-      position: relative;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       max-width: 600px;
-      margin: auto;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: center;
+      width: 100%;
     }
 
     h1 {
@@ -56,4 +54,103 @@
       margin-bottom: 20px;
     }
 
-    .btn
+    .btn {
+      background-color: gold;
+      color: black;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .inventory {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .vehicle-card {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 15px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      display: inline-block;
+      text-align: left;
+      transition: transform 0.3s;
+    }
+
+    .vehicle-card:hover {
+      transform: scale(1.05);
+    }
+
+    .vehicle-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .vehicle-card h3 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION WITH IMAGE -->
+  <header>
+    <img src="images/luxury-hero.jpg" alt="Luxury Cars" />
+    <div class="hero-text">
+      <h1>Boujee Luxury Motors</h1>
+      <p>Browse Our Premium Selection of Rolls-Royce, Bentley, Mercedes, and More</p>
+      <a href="#inventory" class="btn">Explore Cars for Sale</a>
+    </div>
+  </header>
+
+  <!-- VEHICLE INVENTORY SECTION -->
+  <section id="inventory" class="inventory">
+    <h2>Our Luxury Vehicles</h2>
+    <div class="vehicle-card">
+      <img src="images/rolls-royce.jpg" alt="Rolls-Royce" />
+      <h3>Rolls-Royce Phantom</h3>
+      <p>$450,000 | 2023 | 500 HP</p>
+      <a href="contact.html" class="btn">Inquire</a>
+    </div>
+    <div class="vehicle-card">
+      <img src="images/bentley.jpg" alt="Bentley" />
+      <h3>Bentley Continental GT</h3>
+      <p>$220,000 | 2023 | 600 HP</p>
+      <a href="contact.html" class="btn">Inquire</a>
+    </div>
+    <div class="vehicle-card">
+      <img src="images/s-class.jpg" alt="Mercedes S-Class" />
+      <h3>Mercedes S-Class</h3>
+      <p>$125,000 | 2023 | 400 HP</p>
+      <a href="contact.html" class="btn">Inquire</a>
+    </div>
+    <div class="vehicle-card">
+      <img src="images/toyota-crown.jpg" alt="Toyota Crown" />
+      <h3>Toyota Crown</h3>
+      <p>$60,000 | 2023 | 300 HP</p>
+      <a href="contact.html" class="btn">Inquire</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Boujee Luxury Motors. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
