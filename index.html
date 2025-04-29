@@ -20,14 +20,7 @@
     header {
       position: relative;
       height: 100vh;
-      overflow: hidden;
-    }
-
-    header img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+      background: url('https://images.unsplash.com/photo-1619542281327-6e0c8872e9cf?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
     }
 
     .hero-text {
@@ -36,11 +29,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
       border-radius: 10px;
       max-width: 600px;
-      width: 100%;
+      width: 90%;
     }
 
     h1 {
@@ -108,42 +101,45 @@
 </head>
 <body>
 
-  <!-- HERO SECTION WITH IMAGE -->
+  <!-- HERO SECTION -->
   <header>
-    <img src="images/luxury-hero.jpg" alt="Luxury Cars" />
     <div class="hero-text">
       <h1>Boujee Luxury Motors</h1>
-      <p>Browse Our Premium Selection of Rolls-Royce, Bentley, Mercedes, and More</p>
-      <a href="#inventory" class="btn">Explore Cars for Sale</a>
+      <p>Explore our premium collection of Bentley, Rolls-Royce, S-Class, Toyota Crown, and more.</p>
+      <a href="#inventory" class="btn">Browse Inventory</a>
     </div>
   </header>
 
   <!-- VEHICLE INVENTORY SECTION -->
   <section id="inventory" class="inventory">
     <h2>Our Luxury Vehicles</h2>
+
     <div class="vehicle-card">
-      <img src="images/rolls-royce.jpg" alt="Rolls-Royce" />
+      <img src="https://images.unsplash.com/photo-1630321932417-26ed7f0bd45a?auto=format&fit=crop&w=800&q=60" alt="Rolls-Royce">
       <h3>Rolls-Royce Phantom</h3>
-      <p>$450,000 | 2023 | 500 HP</p>
-      <a href="contact.html" class="btn">Inquire</a>
+      <p>$450,000 | 2023 | 563 HP</p>
+      <a href="#" class="btn">Inquire</a>
     </div>
+
     <div class="vehicle-card">
-      <img src="images/bentley.jpg" alt="Bentley" />
+      <img src="https://images.unsplash.com/photo-1603389389936-c84fc99c9e69?auto=format&fit=crop&w=800&q=60" alt="Bentley">
       <h3>Bentley Continental GT</h3>
-      <p>$220,000 | 2023 | 600 HP</p>
-      <a href="contact.html" class="btn">Inquire</a>
+      <p>$220,000 | 2023 | 626 HP</p>
+      <a href="#" class="btn">Inquire</a>
     </div>
+
     <div class="vehicle-card">
-      <img src="images/s-class.jpg" alt="Mercedes S-Class" />
+      <img src="https://images.unsplash.com/photo-1620891803174-1ef62c39f95a?auto=format&fit=crop&w=800&q=60" alt="Mercedes S-Class">
       <h3>Mercedes S-Class</h3>
-      <p>$125,000 | 2023 | 400 HP</p>
-      <a href="contact.html" class="btn">Inquire</a>
+      <p>$125,000 | 2023 | 429 HP</p>
+      <a href="#" class="btn">Inquire</a>
     </div>
+
     <div class="vehicle-card">
-      <img src="images/toyota-crown.jpg" alt="Toyota Crown" />
+      <img src="https://images.unsplash.com/photo-1673980295417-d259b41cf94e?auto=format&fit=crop&w=800&q=60" alt="Toyota Crown">
       <h3>Toyota Crown</h3>
-      <p>$60,000 | 2023 | 300 HP</p>
-      <a href="contact.html" class="btn">Inquire</a>
+      <p>$60,000 | 2023 | 340 HP</p>
+      <a href="#" class="btn">Inquire</a>
     </div>
   </section>
 
