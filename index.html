@@ -17,21 +17,33 @@
       color: #ffffff;
     }
 
+    /* Hero Section with Background Video */
     header {
-      background: url('images/luxury-bg.jpg') no-repeat center center/cover;
+      position: relative;
       height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
+      overflow: hidden;
+    }
+
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
     }
 
     .hero-text {
+      position: relative;
       background: rgba(0, 0, 0, 0.6);
       padding: 30px;
       border-radius: 10px;
       max-width: 600px;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
     }
 
     h1 {
@@ -98,17 +110,6 @@
       font-family: 'Playfair Display', serif;
     }
 
-    .video-container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .video-container video,
-    .video-container iframe {
-      width: 100%;
-      border-radius: 10px;
-    }
-
     footer {
       background-color: #111;
       color: #ccc;
@@ -135,8 +136,12 @@
 </head>
 <body>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
   <header>
+    <video autoplay muted loop playsinline poster="images/hero-fallback.jpg">
+      <source src="videos/luxury-drive.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <div class="hero-text">
       <h1>Elite Luxe Motors</h1>
       <p>Experience the elegance of Rolls-Royce, Bentley, Maybach & Mercedes S-Class</p>
@@ -144,26 +149,6 @@
       <a href="rentals.html" class="btn">Rent a Luxury Car</a>
     </div>
   </header>
-
-  <!-- VIDEO SECTION -->
-  <section>
-    <h2>Experience the Drive</h2>
-    <div class="video-container">
-      <!-- Self-hosted video example -->
-      <video controls>
-        <source src="videos/rolls-drive.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <!-- OR use a YouTube embed:
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-      -->
-
-      <p style="margin-top: 10px; font-style: italic;">
-        A cinematic tour of the Rolls-Royce Phantom — where luxury meets engineering perfection.
-      </p>
-    </div>
-  </section>
 
   <!-- BRANDS SECTION -->
   <section>
