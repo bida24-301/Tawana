@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuxDrive Motors</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">LuxDrive</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <button id="darkToggle">🌓</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Background Video -->
+  <section id="home" class="hero">
+    <video autoplay muted loop id="bgVideo">
+      <source src="assets/videos/luxury-driving.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-overlay">
+      <h1>Drive in Luxury</h1>
+      <p>Explore our premium collection of vehicles built for elegance and performance.</p>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>LuxDrive Motors is your destination for the finest high-end vehicles. We offer elegance, power, and personalized service to our elite clientele. Our team curates only the best in automotive engineering and luxury lifestyle.</p>
+  </section>
+
+  <!-- Vehicle Listing with Filter -->
+  <section id="vehicles" class="vehicles">
+    <h2>Our Luxury Vehicles</h2>
+    <input type="text" id="vehicleSearch" placeholder="Search by brand..." />
+    <div class="vehicle-grid" id="vehicleGrid">
+
+      <!-- Include 20+ vehicles across 10 luxury brands (examples below) -->
+
+      <!-- Mercedes -->
+      <div class="vehicle" data-brand="Mercedes">
+        <img src="assets/images/mercedes-sclass.jpg" alt="Mercedes S-Class" />
+        <h3>Mercedes S-Class</h3>
+        <p>Starting at $110,000</p>
+      </div>
+      <div class="vehicle" data-brand="Mercedes">
+        <img src="assets/images/mercedes-amg-gt.jpg" alt="Mercedes AMG GT" />
+        <h3>Mercedes AMG GT</h3>
+        <p>Starting at $165,000</p>
+      </div>
+
+      <!-- BMW -->
+      <div class="vehicle" data-brand="BMW">
+        <img src="assets/images/bmw-7series.jpg" alt="BMW 7 Series" />
+        <h3>BMW 7 Series</h3>
+        <p>Starting at $95,000</p>
+      </div>
+      <div class="vehicle" data-brand="BMW">
+        <img src="assets/images/bmw-i8.jpg" alt="BMW i8" />
+        <h3>BMW i8</h3>
+        <p>Starting at $140,000</p>
+      </div>
+
+      <!-- Rolls-Royce -->
+      <div class="vehicle" data-brand="Rolls-Royce">
+        <img src="assets/images/rolls-ghost.jpg" alt="Rolls-Royce Ghost" />
+        <h3>Rolls-Royce Ghost</h3>
+        <p>Starting at $320,000</p>
+      </div>
+      <div class="vehicle" data-brand="Rolls-Royce">
+        <img src="assets/images/rolls-cullinan.jpg" alt="Rolls-Royce Cullinan" />
+        <h3>Rolls-Royce Cullinan</h3>
+        <p>Starting at $350,000</p>
+      </div>
+
+      <!-- Lamborghini -->
+      <div class="vehicle" data-brand="Lamborghini">
+        <img src="assets/images/lamborghini-urus.jpg" alt="Lamborghini Urus" />
+        <h3>Lamborghini Urus</h3>
+        <p>Starting at $230,000</p>
+      </div>
+      <div class="vehicle" data-brand="Lamborghini">
+        <img src="assets/images/lamborghini-aventador.jpg" alt="Lamborghini Aventador" />
+        <h3>Lamborghini Aventador</h3>
+        <p>Starting at $500,000</p>
+      </div>
+
+      <!-- Ferrari -->
+      <div class="vehicle" data-brand="Ferrari">
+        <img src="assets/images/ferrari-f8.jpg" alt="Ferrari F8 Tributo" />
+        <h3>Ferrari F8 Tributo</h3>
+        <p>Starting at $275,000</p>
+      </div>
+      <div class="vehicle" data-brand="Ferrari">
+        <img src="assets/images/ferrari-roma.jpg" alt="Ferrari Roma" />
+        <h3>Ferrari Roma</h3>
+        <p>Starting at $225,000</p>
+      </div>
+
+      <!-- Porsche -->
+      <div class="vehicle" data-brand="Porsche">
+        <img src="assets/images/porsche-911.jpg" alt="Porsche 911 Turbo S" />
+        <h3>Porsche 911 Turbo S</h3>
+        <p>Starting at $207,000</p>
+      </div>
+      <div class="vehicle" data-brand="Porsche">
+        <img src="assets/images/porsche-panamera.jpg" alt="Porsche Panamera" />
+        <h3>Porsche Panamera</h3>
+        <p>Starting at $95,000</p>
+      </div>
+
+      <!-- Aston Martin -->
+      <div class="vehicle" data-brand="Aston Martin">
+        <img src="assets/images/aston-db11.jpg" alt="Aston Martin DB11" />
+        <h3>Aston Martin DB11</h3>
+        <p>Starting at $220,000</p>
+      </div>
+      <div class="vehicle" data-brand="Aston Martin">
+        <img src="assets/images/aston-vantage.jpg" alt="Aston Martin Vantage" />
+        <h3>Aston Martin Vantage</h3>
+        <p>Starting at $150,000</p>
+      </div>
+
+      <!-- Bentley -->
+      <div class="vehicle" data-brand="Bentley">
+        <img src="assets/images/bentley-continental.jpg" alt="Bentley Continental GT" />
+        <h3>Bentley Continental GT</h3>
+        <p>Starting at $250,000</p>
+      </div>
+      <div class="vehicle" data-brand="Bentley">
+        <img src="assets/images/bentley-bentayga.jpg" alt="Bentley Bentayga" />
+        <h3>Bentley Bentayga</h3>
+        <p>Starting at $190,000</p>
+      </div>
+
+      <!-- Maserati -->
+      <div class="vehicle" data-brand="Maserati">
+        <img src="assets/images/maserati-levante.jpg" alt="Maserati Levante" />
+        <h3>Maserati Levante</h3>
+        <p>Starting at $90,000</p>
+      </div>
+      <div class="vehicle" data-brand="Maserati">
+        <img src="assets/images/maserati-granturismo.jpg" alt="Maserati GranTurismo" />
+        <h3>Maserati GranTurismo</h3>
+        <p>Starting at $150,000</p>
+      </div>
+
+      <!-- Bugatti -->
+      <div class="vehicle" data-brand="Bugatti">
+        <img src="assets/images/bugatti-chiron.jpg" alt="Bugatti Chiron" />
+        <h3>Bugatti Chiron</h3>
+        <p>Starting at $3,000,000</p>
+      </div>
+      <div class="vehicle" data-brand="Bugatti">
+        <img src="assets/images/bugatti-divo.jpg" alt="Bugatti Divo" />
+        <h3>Bugatti Divo</h3>
+        <p>Starting at $5,800,000</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Slider -->
+  <section id="testimonials" class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/user1.jpg" alt="Client 1">
+          <p>“Absolutely the best service I’ve experienced. LuxDrive is luxury redefined.”</p>
+        </div>
+        <div class="swiper-slide">
+          <
 
