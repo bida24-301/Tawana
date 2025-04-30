@@ -4,223 +4,221 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MyBFleet - Luxury Cars</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      font-family: 'Georgia', serif;
-      background-color: #0b1a30;
-      color: #e0e0e0;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(11, 26, 48, 0.95);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: gold;
-      letter-spacing: 2px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-
-    nav ul li a {
-      color: #e0e0e0;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    /* Dropdown Styles */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropbtn {
-      background-color: transparent;
-      color: #e0e0e0;
-      padding: 14px 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #132c4a;
-      min-width: 160px;
-      z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown-content a {
-      color: #e0e0e0;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-      color: #0b1a30;
-    }
-
-    .hero {
-      height: 100vh;
-      background: url('https://cdn.pixabay.com/photo/2016/11/29/02/03/rolls-royce-1868722_1280.jpg') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-
-    .overlay {
-      background: rgba(11, 26, 48, 0.7);
-      padding: 60px;
-      text-align: center;
-    }
-
-    .overlay h1 {
-      font-size: 50px;
-      color: gold;
-      margin-bottom: 30px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .btn {
-      padding: 14px 28px;
-      background: transparent;
-      border: 2px solid #e0e0e0;
-      color: #e0e0e0;
-      text-decoration: none;
-      font-size: 16px;
-      transition: all 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #e0e0e0;
-      color: #0b1a30;
-    }
-
-    .fleet {
-      padding: 50px;
-      background-color: #132c4a;
-    }
-
-    .fleet h2 {
-      text-align: center;
-      font-size: 36px;
-      color: gold;
-      margin-bottom: 40px;
-    }
-
-    .brand {
-      margin-bottom: 40px;
-    }
-
-    .brand h3 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #d0d0d0;
-    }
-
-    .brand ul {
-      padding-left: 20px;
-    }
-
-    .brand li {
-      margin: 10px 0;
-    }
-
-    .gallery {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-      flex-wrap: wrap;
-    }
-
-    .gallery img {
-      width: 200px;
-      border-radius: 8px;
-      border: 2px solid #444;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    button {
-      margin-left: 10px;
-      padding: 5px 10px;
-      font-size: 14px;
-      cursor: pointer;
-      background-color: #e0e0e0;
-      color: #0b1a30;
-      border: none;
-      border-radius: 5px;
-    }
-  </style>
+  <!-- Link to the external styles.css file -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <div class="logo">MyBFleet</div>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#fleet">Fleet</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#test-drive">Test Drive</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <div class="logo">MyBFleet</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#test-drive">Test Drive</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="hero">
-  <div class="overlay">
-    <h1>Luxury Cars at Your Command</h1>
-    <div class="buttons">
-      <a href="#fleet" class="btn">Explore Fleet</a>
-      <a href="#contact" class="btn">Contact Us</a>
+  <section class="hero">
+    <div class="overlay">
+      <h1>Luxury Cars at Your Command</h1>
+      <div class="buttons">
+        <a href="#fleet" class="btn">Explore Fleet</a>
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Your fleet and other sections go here -->
+  <section id="fleet" class="fleet">
+    <h2>Our Luxury Brands</h2>
 
-<script>
-function toggleGallery(id) {
-  const gallery = document.getElementById(id);
-  gallery.classList.toggle('hidden');
-}
-</script>
+    <!-- Rolls-Royce Brand -->
+    <div class="brand">
+      <h3>Rolls-Royce</h3>
+      <ul>
+        <li>Phantom</li>
+        <li>Ghost</li>
+        <li>Wraith</li>
+        <li>Dawn</li>
+        <li>Cullinan</li>
+      </ul>
+      <button onclick="toggleGallery('rr-gallery')">View Cars</button>
+      <div id="rr-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/rolls-royce-1955350_1280.jpg" alt="Rolls-Royce 1">
+        <img src="https://cdn.pixabay.com/photo/2021/03/23/16/14/rolls-royce-6119130_1280.jpg" alt="Rolls-Royce 2">
+      </div>
+    </div>
+
+    <!-- Bentley Brand -->
+    <div class="brand">
+      <h3>Bentley</h3>
+      <ul>
+        <li>Mulsanne</li>
+        <li>Continental GT</li>
+        <li>Flying Spur</li>
+        <li>Bentayga</li>
+        <li>Azure</li>
+      </ul>
+      <button onclick="toggleGallery('bentley-gallery')">View Cars</button>
+      <div id="bentley-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2018/01/28/20/04/bentley-3118741_1280.jpg" alt="Bentley 1">
+        <img src="https://cdn.pixabay.com/photo/2020/07/19/19/32/bentley-5422343_1280.jpg" alt="Bentley 2">
+      </div>
+    </div>
+
+    <!-- BMW Brand -->
+    <div class="brand">
+      <h3>BMW</h3>
+      <ul>
+        <li>X7</li>
+        <li>740i</li>
+        <li>i8</li>
+        <li>X5</li>
+        <li>8 Series</li>
+      </ul>
+      <button onclick="toggleGallery('bmw-gallery')">View Cars</button>
+      <div id="bmw-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2020/11/02/11/33/bmw-5710213_1280.jpg" alt="BMW X7">
+        <img src="https://cdn.pixabay.com/photo/2019/10/05/18/44/bmw-4523290_1280.jpg" alt="BMW 740i">
+      </div>
+    </div>
+
+    <!-- Mercedes-Benz Brand -->
+    <div class="brand">
+      <h3>Mercedes-Benz</h3>
+      <ul>
+        <li>S-Class</li>
+        <li>Maybach</li>
+        <li>GLE Coupe</li>
+        <li>GLS</li>
+        <li>C-Class</li>
+      </ul>
+      <button onclick="toggleGallery('mercedes-gallery')">View Cars</button>
+      <div id="mercedes-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2021/04/26/14/57/mercedes-6187670_1280.jpg" alt="Mercedes-Benz S-Class">
+        <img src="https://cdn.pixabay.com/photo/2020/08/21/22/45/mercedes-5507252_1280.jpg" alt="Mercedes-Benz Maybach">
+      </div>
+    </div>
+
+    <!-- Maybach Brand -->
+    <div class="brand">
+      <h3>Maybach</h3>
+      <ul>
+        <li>Maybach S-Class</li>
+        <li>Maybach 57</li>
+        <li>Maybach 62</li>
+        <li>Maybach Exelero</li>
+        <li>Maybach Landaulet</li>
+      </ul>
+      <button onclick="toggleGallery('maybach-gallery')">View Cars</button>
+      <div id="maybach-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2019/10/05/18/43/mercedes-4523289_1280.jpg" alt="Maybach S-Class">
+        <img src="https://cdn.pixabay.com/photo/2020/11/02/13/10/mercedes-maybach-5710131_1280.jpg" alt="Maybach 57">
+      </div>
+    </div>
+
+    <!-- Lamborghini Brand -->
+    <div class="brand">
+      <h3>Lamborghini</h3>
+      <ul>
+        <li>Aventador</li>
+        <li>Huracan</li>
+        <li>Urus</li>
+        <li>Sián</li>
+        <li>Countach</li>
+      </ul>
+      <button onclick="toggleGallery('lamborghini-gallery')">View Cars</button>
+      <div id="lamborghini-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2021/03/10/20/40/lamborghini-6070201_1280.jpg" alt="Lamborghini Aventador">
+        <img src="https://cdn.pixabay.com/photo/2021/05/22/10/58/lamborghini-6506395_1280.jpg" alt="Lamborghini Huracan">
+      </div>
+    </div>
+
+    <!-- Ferrari Brand -->
+    <div class="brand">
+      <h3>Ferrari</h3>
+      <ul>
+        <li>488 GTB</li>
+        <li>812 Superfast</li>
+        <li>Portofino</li>
+        <li>F8 Tributo</li>
+        <li>LaFerrari</li>
+      </ul>
+      <button onclick="toggleGallery('ferrari-gallery')">View Cars</button>
+      <div id="ferrari-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2020/03/09/11/34/ferrari-4917980_1280.jpg" alt="Ferrari 488 GTB">
+        <img src="https://cdn.pixabay.com/photo/2021/08/14/11/19/ferrari-488-1556143_1280.jpg" alt="Ferrari F8 Tributo">
+      </div>
+    </div>
+
+    <!-- Porsche Brand -->
+    <div class="brand">
+      <h3>Porsche</h3>
+      <ul>
+        <li>911 Turbo</li>
+        <li>Cayman</li>
+        <li>Panamera</li>
+        <li>Taycan</li>
+        <li>Macan</li>
+      </ul>
+      <button onclick="toggleGallery('porsche-gallery')">View Cars</button>
+      <div id="porsche-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2021/07/18/08/12/porsche-6466325_1280.jpg" alt="Porsche 911 Turbo">
+        <img src="https://cdn.pixabay.com/photo/2020/12/30/16/00/porsche-5884672_1280.jpg" alt="Porsche Taycan">
+      </div>
+    </div>
+
+    <!-- Audi Brand -->
+    <div class="brand">
+      <h3>Audi</h3>
+      <ul>
+        <li>A8 L</li>
+        <li>Q7</li>
+        <li>Q8</li>
+        <li>R8</li>
+        <li>RS7</li>
+      </ul>
+      <button onclick="toggleGallery('audi-gallery')">View Cars</button>
+      <div id="audi-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2020/03/09/07/14/audi-4906245_1280.jpg" alt="Audi R8">
+        <img src="https://cdn.pixabay.com/photo/2018/06/14/22/13/audi-3474530_1280.jpg" alt="Audi Q7">
+      </div>
+    </div>
+
+    <!-- Jaguar Brand -->
+    <div class="brand">
+      <h3>Jaguar</h3>
+      <ul>
+        <li>F-Type</li>
+        <li>XJ</li>
+        <li>F-Pace</li>
+        <li>E-Pace</li>
+        <li>XE</li>
+      </ul>
+      <button onclick="toggleGallery('jaguar-gallery')">View Cars</button>
+      <div id="jaguar-gallery" class="gallery hidden">
+        <img src="https://cdn.pixabay.com/photo/2018/07/12/12/59/jaguar-3530672_1280.jpg" alt="Jaguar F-Type">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/02/03/jaguar-1868722_1280.jpg" alt="Jaguar XJ">
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact" style="padding: 50px; background: #0b1a30; text-align: center;">
+    <h2 style="color: gold; font-size: 32px;">Contact Us</h2>
+    <p>Email us at <a href="mailto:info@mybfleet.com" style="color: #e0e0e0;">info@mybfleet.com</a></p>
+  </section>
+
+  <script>
+    function toggleGallery(id) {
+      const gallery = document.getElementById(id);
+      gallery.classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>
