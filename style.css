@@ -1,0 +1,179 @@
+/* Resetting margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body, html {
+  font-family: 'Georgia', serif;
+  background-color: #121b28;  /* Very dark, almost blackish blue */
+  color: #e0e0e0;  /* Light text for contrast */
+  height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(11, 26, 48, 0.95);  /* Darker, almost opaque header */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: gold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: gold;  /* Hover effect on navigation links */
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 100vh;
+  background: url('https://cdn.pixabay.com/photo/2016/11/29/02/03/rolls-royce-1868722_1280.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #1b2d45;  /* Deep blue-grey, much darker */
+}
+
+.overlay {
+  background: rgba(11, 26, 48, 0.8);  /* Darker overlay to reduce brightness */
+  padding: 60px;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 50px;
+  color: gold;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 28px;
+  background: transparent;
+  border: 2px solid #e0e0e0;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+  color: #0b1a30;
+}
+
+/* Fleet Section */
+.fleet {
+  padding: 50px;
+  background-color: #182534;  /* Deep charcoal blue for fleet section */
+}
+
+.fleet h2 {
+  text-align: center;
+  font-size: 36px;
+  color: gold;
+  margin-bottom: 40px;
+}
+
+/* Brand Block Styles */
+.brand {
+  margin-bottom: 40px;
+}
+
+.brand h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #d0d0d0;
+}
+
+.brand ul {
+  padding-left: 20px;
+}
+
+.brand li {
+  margin: 10px 0;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 8px;
+  border: 2px solid #444;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px;
+  background: #0f1a2b;  /* Very dark blue */
+  text-align: center;
+}
+
+#contact h2 {
+  color: gold;
+  font-size: 32px;
+}
+
+/* Button Styles */
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #0b1a30;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0b1a30;
+  color: #e0e0e0;
+}
+
+/* Footer Section (if any) */
+footer {
+  background-color: #0f1a2b;
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
