@@ -8,15 +8,15 @@
 /* Global Styles */
 body, html {
   font-family: 'Georgia', serif;
-  background-color: #121b28;  /* Very dark, almost blackish blue */
-  color: #e0e0e0;  /* Light text for contrast */
+  background-color: #121212;  /* Dark background */
+  color: #f0f0f0;  /* Light text for contrast */
   height: 100%;
 }
 
 header {
   position: sticky;
   top: 0;
-  background: rgba(11, 26, 48, 0.95);  /* Darker, almost opaque header */
+  background: rgba(0, 0, 0, 0.85);  /* Dark header */
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@ header {
 header .logo {
   font-size: 28px;
   font-weight: bold;
-  color: gold;
+  color: #f0f0f0;
   letter-spacing: 2px;
 }
 
@@ -38,13 +38,13 @@ nav ul {
 }
 
 nav ul li a {
-  color: #e0e0e0;
+  color: #f0f0f0;
   text-decoration: none;
   font-size: 16px;
 }
 
 nav ul li a:hover {
-  color: gold;  /* Hover effect on navigation links */
+  color: #e0e0e0;  /* Hover effect for navigation links */
 }
 
 /* Hero Section Styles */
@@ -55,18 +55,18 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: #1b2d45;  /* Deep blue-grey, much darker */
+  background-color: #1c1c1c;  /* Darker shade */
 }
 
 .overlay {
-  background: rgba(11, 26, 48, 0.8);  /* Darker overlay to reduce brightness */
+  background: rgba(0, 0, 0, 0.7);  /* Darker overlay to reduce brightness */
   padding: 60px;
   text-align: center;
 }
 
 .overlay h1 {
   font-size: 50px;
-  color: gold;
+  color: #f0f0f0;
   margin-bottom: 30px;
 }
 
@@ -79,28 +79,28 @@ nav ul li a:hover {
 .btn {
   padding: 14px 28px;
   background: transparent;
-  border: 2px solid #e0e0e0;
-  color: #e0e0e0;
+  border: 2px solid #f0f0f0;
+  color: #f0f0f0;
   text-decoration: none;
   font-size: 16px;
   transition: all 0.3s;
 }
 
 .btn:hover {
-  background-color: #e0e0e0;
-  color: #0b1a30;
+  background-color: #f0f0f0;
+  color: #121212;
 }
 
 /* Fleet Section */
 .fleet {
   padding: 50px;
-  background-color: #182534;  /* Deep charcoal blue for fleet section */
+  background-color: #2a2a2a;  /* Dark background for fleet section */
 }
 
 .fleet h2 {
   text-align: center;
   font-size: 36px;
-  color: gold;
+  color: #f0f0f0;
   margin-bottom: 40px;
 }
 
@@ -112,7 +112,7 @@ nav ul li a:hover {
 .brand h3 {
   font-size: 28px;
   margin-bottom: 10px;
-  color: #d0d0d0;
+  color: #f0f0f0;
 }
 
 .brand ul {
@@ -144,12 +144,12 @@ nav ul li a:hover {
 /* Contact Section */
 #contact {
   padding: 50px;
-  background: #0f1a2b;  /* Very dark blue */
+  background: #1a1a1a;  /* Very dark background */
   text-align: center;
 }
 
 #contact h2 {
-  color: gold;
+  color: #f0f0f0;
   font-size: 32px;
 }
 
@@ -159,21 +159,35 @@ button {
   padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #e0e0e0;
-  color: #0b1a30;
+  background-color: #f0f0f0;
+  color: #121212;
   border: none;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #0b1a30;
-  color: #e0e0e0;
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
 /* Footer Section (if any) */
 footer {
-  background-color: #0f1a2b;
-  color: #e0e0e0;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
   padding: 20px;
   text-align: center;
+}
+
+/* Black or White Car Gallery Styles */
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
